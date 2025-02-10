@@ -222,7 +222,7 @@ function App() {
                     <Github size={24} />
                   </a>
                   <a
-                    href="https://modernmoviemovix.netlify.app/"
+                    href="https://radiant-crostata-11596d.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800"

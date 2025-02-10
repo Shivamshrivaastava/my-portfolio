@@ -44,7 +44,23 @@ function App() {
                 href="https://drive.google.com/file/d/1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center gap-2 px-3 py-2 text-blue-600 hover:text-blue-700"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Open the resume in a new tab
+                  window.open(
+                    "https://drive.google.com/file/d/1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL/view?usp=sharing",
+                    "_blank"
+                  );
+                  // Trigger download
+                  const a = document.createElement("a");
+                  a.href =
+                    "https://drive.google.com/uc?export=download&id=1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL";
+                  a.download = "Resume.pdf"; // Optional: Rename the file
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                }}
               >
                 <FileDown size={20} />
                 Resume
@@ -86,6 +102,22 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-2 text-blue-600 hover:text-blue-700"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Open the resume in a new tab
+                  window.open(
+                    "https://drive.google.com/file/d/1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL/view?usp=sharing",
+                    "_blank"
+                  );
+                  // Trigger download
+                  const a = document.createElement("a");
+                  a.href =
+                    "https://drive.google.com/uc?export=download&id=1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL";
+                  a.download = "Resume.pdf"; // Optional: Rename the file
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                }}
               >
                 <FileDown size={20} />
                 Resume

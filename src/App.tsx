@@ -41,7 +41,7 @@ function App() {
                 Contact
               </a>
               <a
-                href="https://drive.google.com/file/d/1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1z24BtO62IKWmyk1sWw5eNqnDvNIfdV89/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-2 text-blue-600 hover:text-blue-700"
@@ -49,7 +49,7 @@ function App() {
                   e.preventDefault();
                   // Open the resume in a new tab
                   window.open(
-                    "https://drive.google.com/file/d/1zL4Mt6FLHUPrgm9euOJ_OeLF7Y3zGYpL/view?usp=sharing",
+                    "https://drive.google.com/file/d/1z24BtO62IKWmyk1sWw5eNqnDvNIfdV89/view?usp=sharing",
                     "_blank"
                   );
                   // Trigger download
